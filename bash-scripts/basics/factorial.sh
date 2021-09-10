@@ -3,7 +3,7 @@ read -p "Enter the number to find factorial : " num
 result=1
 for (( i=2; i<=num; i++))
 do
-  result=`expr $result \* $i`
+  result=$(($i * $result))
 done
 
 echo "The factorial of the number $num is $result"
