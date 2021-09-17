@@ -8,8 +8,8 @@ declare -i result copy_num=$num
 while [ $copy_num -gt 0 ]
 do
   cur_num=$(($copy_num%10))
-  result=$((result + cur_num*cur_num*cur_num))
-  copy_num=$((copy_num/10))
+  result=$(($result + $cur_num*$cur_num*$cur_num))
+  copy_num=$(($copy_num/10))
 done
 
 if [ $result -eq $num ]
