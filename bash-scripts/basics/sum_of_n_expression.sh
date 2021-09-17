@@ -1,7 +1,6 @@
 #!/bin/bash
 
+declare -i num
 read -p "Enter the value for the N " num
-result=$(($num+1))
-result=$(($result * $num))
-result=$(($result / 2))
+result=$(( $num * ($num+1) / 2))
 echo $result
