@@ -1,6 +1,6 @@
 # linux
 Linux bash scripts.
-<details>
+<details open>
   <summary>Basic bash programs (basics)</summary>
   <ol>
     <li>[ hello world ](https://google.com)</li>
