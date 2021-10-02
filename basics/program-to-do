@@ -1,0 +1,16 @@
+integer to hex AND hex to integer
+integer to octal AND octal to integer
+hex to octal AND octal to hex
+binary to hex AND hex to binary
+binary to octal AND octal to binary
+
+generate prime number
+check if given number is prime
+
+BITWISE OPERATION MUST DO IN OTHER SECTION
+
+git
+1 how to make the fork repo private and make the pr for the same
+for above check medium article where in it specifies, create clone and private repo then some stuff
+
+2 how to change the commits in remote branch and what is this force push
