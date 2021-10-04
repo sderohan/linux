@@ -2,6 +2,7 @@
 
 : <<'END'
 This file contains the basic string manipulation operations, performed to understand the same
+https://www.thegeekstuff.com/2010/07/bash-string-manipulation/
 END
 
 main() {
