@@ -21,6 +21,9 @@ main() {
 
 	# Print the substring of the specified length
 	echo "Substring of length 4 " ${string:3:4}
+
+	# Accessing out of bound index of the string will result in the empty string
+	echo "String of length 10 starting from 10 ${string:10:10}"
 }
 
 
