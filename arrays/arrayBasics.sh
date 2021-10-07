@@ -45,6 +45,7 @@ printArray "${arr[@]}"
 modifyArray() {
 	echo "Inside the modifyArray function"
 	local arr=("$@")
+	# Modify the array at the given position
 	arr[0]=99
 	echo "${arr[@]}"
 }
@@ -53,3 +54,4 @@ declare -a array=(1 2 3 4 5 6 7 8 9 10)
 echo "Before calling modifyArray function " ${array[@]}
 modifyArray "${array[@]}"
 echo "After calling modifyArray function " ${array[@]}
+
