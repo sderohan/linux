@@ -41,3 +41,14 @@ printArray() {
 
 # While passing the array to the function expand and pass it to the array as below
 printArray "${arr[@]}"
+
+modifyArray() {
+	echo "Inside the modifyArray function"
+	local arr=("$@")
+	arr[0]=99
+}
+
+declare -a array=(1 2 3 4 5 6 7 8 9 10)
+echo "Before calling modifyArray function " ${array[@]}
+modifyArray "${array[@]}"
+echo "After calling modifyArray function " ${array[@]}
