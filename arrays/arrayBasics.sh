@@ -46,6 +46,7 @@ modifyArray() {
 	echo "Inside the modifyArray function"
 	local arr=("$@")
 	arr[0]=99
+	echo "${arr[@]}"
 }
 
 declare -a array=(1 2 3 4 5 6 7 8 9 10)
