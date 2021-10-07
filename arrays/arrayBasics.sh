@@ -12,13 +12,14 @@ length=${#arr[@]}
 echo $length
 
 # Print the entire array
-echo ${arr[@]}
+echo "Print the entire array without using the loop " ${arr[@]}
 
 # Iterate over the array arr
 for (( i=0; i<$length; i++ ))
 do
 	echo -n ${arr[$i]} " "
 done
+
 
 # trying to add the other than array to the variable will fallback to the default value
 #arr=9
@@ -28,8 +29,10 @@ echo ""
 
 printArray() {
 	echo "Inside the printArray function"
+	# Below is the correct syntax to access the all array elements if we do $1 then we only get the first element in array
 	local arr=("$@")
 	echo ${arr[@]}
 }
 
+# While passing the array to the function expand and pass it to the array as below
 printArray "${arr[@]}"
