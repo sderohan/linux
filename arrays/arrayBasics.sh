@@ -32,6 +32,11 @@ printArray() {
 	# Below is the correct syntax to access the all array elements if we do $1 then we only get the first element in array
 	local arr=("$@")
 	echo ${arr[@]}
+	echo "Print the array using the shorter version of the loop"
+	for i in "${arr[@]}"
+	do
+		echo -n "$i "
+	done
 }
 
 # While passing the array to the function expand and pass it to the array as below
