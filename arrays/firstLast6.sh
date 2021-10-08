@@ -13,7 +13,7 @@ function firstLast6() {
 	local arr=("$@")
 	local length=${#arr[@]}
 	(( length -= 1 ))
-	if [[ ${arr[0]} == 6 || ${arr[$length]} == 6 ]]
+	if [[ $arr == 6 || ${arr[$length]} == 6 ]]
 	then 
 		return 1
 	else
