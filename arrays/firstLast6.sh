@@ -10,12 +10,11 @@ firstLast6([13, 6, 1, 2, 3]) → 0
 END
 
 function firstLast6() {
-	arr=$1	
-	((length=${#arr[@]}-1))
-	echo ${arr[0]}
-#	if [$arr[0] == 6] || [${arr[$length]}  == 6 ))]]
-	if (( 1 == 1 ))
-	then
+	local arr=("$@")
+	local length=${#arr[@]}
+	(( length -= 1 ))
+	if [[ ${arr[0]} == 6 || ${arr[$length]} == 6 ]]
+	then 
 		return 1
 	else
 		return 0
@@ -24,11 +23,25 @@ function firstLast6() {
 
 function main() {
 	declare -a arr=(1 2 6)
-	echo ${arr[0]}
-	#firstLast6 arr
-#	((l=${#arr[@]}-1))
-#	echo ${arr[0]} $l
+	firstLast6 "${arr[@]}"
 	echo $?
+
+	arr=(6 1 2 3)
+	firstLast6 "${arr[@]}"
+	echo $?
+
+	arr=(8 9 10)
+	firstLast6 "${arr[@]}"
+	echo $?
+
+	arr=(1 2 2)
+	firstLast6 "${arr[@]}"
+	echo $?
+
+	arr=(6 2 6)
+	firstLast6 "${arr[@]}"
+	echo $?
+
 }
 
 main
