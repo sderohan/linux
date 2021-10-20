@@ -1,2 +1,3 @@
 # linux-bash-scripts
-Contains linux bash scripts which I code for practice.
+You will find the bash script written to solve the problems and to implement the the algorithms.
+Interested ! check out in each folder.
