@@ -26,3 +26,9 @@ done
 
 # One liner to print the values
 echo ${arr1[@]}
+
+# Deleting the key and value in associative array
+unset arr1[one]
+
+Print the keys after modification
+echo ${!arr1[@]}
