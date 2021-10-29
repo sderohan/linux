@@ -9,6 +9,13 @@ arr1[three]=3
 arr1[four]=4
 arr1[five]=5
 
+# Another way to declare the array and initialize it
+declare -A arr=( [one]=1 [two]=2 [three]=3 [four]=4 [five]=5 )
+# Print the keys
+echo "Print the keys " ${!arr[@]}
+# Print the values
+echo "Print the values " ${arr[@]}
+
 # Print the key and value in associative array
 for key in ${!arr1[@]}
 do
